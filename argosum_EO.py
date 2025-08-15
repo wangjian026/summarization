@@ -19,10 +19,8 @@ def readtext(path):
         contents = file_obj.readlines()
     return contents
 def remove_surrogate_pairs(input_string):
-    # 使用正则表达式匹配代理对
     surrogate_pattern = re.compile('[\ud800-\udbff][\udc00-\udfff]')
 
-    # 使用 sub 方法将代理对替换为空字符串
     cleaned_string = surrogate_pattern.sub(r'', input_string)
 
     return cleaned_string
@@ -73,11 +71,8 @@ def getData(dir):
         cluster.append(data)
     return cluster
 def preprocess_text(text):
-    # 转换为小写
     text = text.lower()
-    # 去除标点符号
     text = re.sub(r'\W+', ' ', text)
-    # 分词
     tokens = word_tokenize(text)
     return tokens
 
@@ -261,4 +256,5 @@ if __name__ == "__main__":
     except Exception as ex:
 
         import traceback
+
         traceback.print_exc()
