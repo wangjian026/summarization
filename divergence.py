@@ -130,7 +130,7 @@ class EvidencePairSelector:
         embedding_model: str = "all-MiniLM-L6-v2",
     ):
         """
-        初始化选择器
+        
         """
         self.Dm = Dm
         self.Dv = Dv
@@ -360,7 +360,6 @@ if __name__ == "__main__":
                     info['is_ture'] = 0  #
                     with open('explan_results/' + str(flag) + 'final_results' + '.txt', 'a+',
                               encoding='utf-8') as file:
-                        # # 写入内容
                         file.write(str(info).replace('\n', '') + '\n')
                     continue
                 else:
@@ -418,3 +417,4 @@ if __name__ == "__main__":
     except Exception as ex:
         import traceback
         traceback.print_exc()
+
