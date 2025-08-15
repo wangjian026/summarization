@@ -1,0 +1,25 @@
+You will be given a list of opinion document and a topic. Your task is to identify  multiple aspects that are common across these documents, and provide a short explanation for each aspect based on both the topic  and the document contents.
+
+Output example format:
+```json
+{
+   "<Aspect>": "<concise explanation of the aspect>"
+}
+
+Definition of "aspects":
+A aspect refers to a general argument perspective  of the opinions. Not the topic of opinons.
+For example the "Use of celebrity platform for advocacy", "Public awareness and motivation on climate change",
+
+Instructions:
+- Include only aspects that are relevant to and present in the documents.
+- Explanations must be concise (1–2 sentences) and specific to the given documents.
+- Do not include any extra text outside the JSON.
+-Replace the placeholder text <Aspect> and  <concise explanation of the aspect> with your own generated content based on the input.
+
+
+Topic:
+['{topic}']
+
+Documents:
+{document}
+

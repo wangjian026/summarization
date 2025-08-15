@@ -1,0 +1,30 @@
+You are given four  sets: Set1, Set2, Set3, and Set4.
+Each set consists of two lists of sentences: one supporting opinion A and one supporting opinion B.
+Your task is to determine whether the divergence between Set1 and Set2 better reflects the disagreement between Opinion A
+and Opinion B than the divergence between Set3 and Set4.
+Focus on the clarity, relevance, aspect coverage, and contrast between the two sides.
+The contents of the set should focus on different aspects of the divergence.
+Respond with "1" if the  divergence between Set1 and Set2 better captures the divergence between Opinion A and Opinion B, "0" otherwise.
+
+Set 1:
+'{new_KD0}
+
+Set 2:
+'{new_KD1}
+
+Set 3:
+'{compar10}'
+
+Set 4:
+'{compar11}'
+
+opinion A:
+'{opinionA}'
+
+opinion B
+'{opinionB}'
+
+Output json format:
+{
+  "results": "1 or 0"
+}
